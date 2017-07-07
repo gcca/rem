@@ -1,0 +1,43 @@
+{
+  "name": "rem",
+  "description": "Cristhian-Gz Architecture",
+  "version": "0.0.1",
+  "author": "Cristhian Gz",
+  "bugs": {
+    "url": "https://github.com/gcca/rem/issues"
+  },
+  "dependencies": {
+    "@angular/common": "^4.2.5",
+    "@angular/compiler": "^4.2.5",
+    "@angular/core": "^4.2.5",
+    "@angular/platform-browser": "^4.2.5",
+    "@angular/platform-browser-dynamic": "^4.2.5",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.12"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "lite-server": "^2.3.0",
+    "systemjs": "^0.20.14",
+    "typescript": "^2.4.1"
+  },
+  "homepage": "https://github.com/gcca/rem#readme",
+  "keywords": [
+    "architecture",
+    "frontend"
+  ],
+  "license": "GPL-2.0",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcca/rem.git"
+  },
+  "scripts": {
+    "build": "tsc -p src/",
+    "build:watch": "tsc -p src/ -w",
+    "serve": "lite-server -c=bs-config.json",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "test": "test-cli"
+  }
+}
